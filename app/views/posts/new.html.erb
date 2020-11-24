@@ -1,0 +1,7 @@
+<h1>新規投稿フォーム</h1>
+
+<%= form_with url:"/posts", method: :post, local:true do |formlist| %>
+<%= formlist.text_field :name %>
+<%= formlist.submit'投稿する' %>
+
+<% end %>
